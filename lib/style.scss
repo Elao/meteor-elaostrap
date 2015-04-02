@@ -1,0 +1,63 @@
+// Architecture based on http://www.sitepoint.com/architecture-sass-project/
+@charset "UTF-8";
+
+// ------------------------------------
+//   Basics
+// ------------------------------------
+@import "../.npm/package/node_modules/elaostrap/assets/sass/variables/base";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/variables/default";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/base/reset";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/base/font";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/helpers/mixins";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/helpers/shortcuts";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/layout/grid";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/layout/forms";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/layout/layout";
+
+
+// ------------------------------------
+//   Remove un  used components
+// ------------------------------------
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/buttons";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/button-groups";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/simpleSelector";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/simpleInputFile";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/tables";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/alerts";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/tabs";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/tooltips";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/popovers";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/input-groups";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/navbar";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/progress-bar";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/panels";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/labels";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/dropdowns";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/pagination";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/media";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/loader";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/fancybox";
+// @import "../.npm/package/node_modules/elaostrap/assets/sass/dropify/src/sass/dropify";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/mobile-nav";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/datepicker";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/components/select2";
+
+
+// ------------------------------------
+//   Contains Headings, p, hr... style.
+// ------------------------------------
+@import "../.npm/package/node_modules/elaostrap/assets/sass/base/typography";
+
+
+// ------------------------------------
+//   Contains Pages
+// ------------------------------------
+@import "../.npm/package/node_modules/elaostrap/assets/sass/pages/doc";
+
+
+// ------------------------------------
+//   Responsive style.
+// ------------------------------------
+
+@import "sass/helpers/responsive";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/helpers/responsive-utilities";

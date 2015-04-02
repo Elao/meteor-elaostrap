@@ -1,0 +1,23 @@
+// ------------------------------------
+//   Default style
+// ------------------------------------
+@import "style";
+
+// ------------------------------------
+//   Admin Pages
+// ------------------------------------
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/variables/variables";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/layout/layout";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/layout/form";
+
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/navbar";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/sidebar";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/tables";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/dropdowns";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/filters";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/tabs";
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/select2";
+
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/pages/login";
+
+@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/helpers/responsive";
