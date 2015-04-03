@@ -1,6 +1,6 @@
 # Meteor ElaoStrap
 
-ElaoStrap (bootstrap fork) integration for MeteorJs
+[ElaoStrap](https://github.com/JeremyFagis/ElaoStrap) (bootstrap fork) integration for MeteorJs
 
 ## Dependencies
 
