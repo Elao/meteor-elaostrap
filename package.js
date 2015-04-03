@@ -8,8 +8,8 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1');
-    api.imply(['iron:router', 'aldeed:template-extension']);
-    api.use(['templating'], 'client');
+    api.imply(['iron:router', 'aldeed:template-extension', 'natestrauser:select2']);
+    api.use(['templating', 'aldeed:template-extension'], 'client');
 
     Npm.depends({
         "bootstrap-sass": "3.3.1",
