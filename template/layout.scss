@@ -1,0 +1,13 @@
+div #loading{
+  background: rgba(200, 200, 200, 0.5);
+}
+
+.with-fixed-top-navbar{
+    .navbar{
+        position: fixed;
+    }
+
+    .main-content{
+        padding-top: 80px;
+    }
+}

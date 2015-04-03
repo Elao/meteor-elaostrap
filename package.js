@@ -8,6 +8,8 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1');
+    api.imply(['iron:router', 'aldeed:template-extension']);
+    api.use(['templating'], 'client');
 
     Npm.depends({
         "bootstrap-sass": "3.3.1",
@@ -142,6 +144,18 @@ Package.onUse(function(api) {
         'lib/style.scss',
         'lib/admin.scss',
     ], 'server');
+
+    // add elaoStrap templates
+    api.addFiles([
+        'template/layout.scss',
+    ], 'server');
+
+    api.addFiles([
+        'template/layout.html',
+        'template/layout.js',
+        'template/navbars.html',
+        'template/navbars.js',
+    ], 'client');
 });
 
 Package.onTest(function(api) {

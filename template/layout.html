@@ -1,0 +1,37 @@
+<head>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700|Inconsolata:400' rel='stylesheet' type='text/css'>
+</head>
+
+<template name="elao_strap_layout">
+    <div class="loading {{bodyClass}}">
+        {{> elao_strap_layout_loading}}
+        <a href="#" class="scroll-to-top">&uarr;</a>
+
+        {{> yield region='top_navbar'}}
+
+        <div class="main-content">
+            <div class="container">
+                <div class="list-actions-mobile"></div>
+                <div class="page-title-mobile"></div>
+
+                {{> yield}}
+            </div>
+        </div>
+
+        {{> yield region='footer'}}
+    </div>
+</template>
+
+<template name="elao_strap_layout_loading">
+    <div class="loading">
+        <section id="loading">
+            <div class="loader"></div>
+            <p>{{loadingMessage}}</p>
+        </section>
+    </div>
+</template>

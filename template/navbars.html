@@ -1,0 +1,20 @@
+<template name="elao_strap_top_navbar">
+    <div id="mobile-nav">
+        <div class="mobile-nav-title">{{mobileTitle}}</div>
+        <nav></nav>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a href="/" class="navbar-logo">{{title}}</a>
+
+            <a href="#" class="mobile-nav-toggle">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </a>
+
+            {{> UI.contentBlock}}
+        </div>
+    </div>
+</template>
