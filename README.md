@@ -1,6 +1,6 @@
 # Meteor ElaoStrap
 
-ElaoStrap (bootstrap fork) integration for MeteorJs
+[ElaoStrap](https://github.com/JeremyFagis/ElaoStrap) (bootstrap fork) integration for MeteorJs
 
 ## Dependencies
 
@@ -22,7 +22,7 @@ In your `client/` directory, write a scss file to import what you need :
 @import ".meteor/local/build/programs/server/assets/packages/yoh_meteor-elao-strap/lib/admin";
 ```
 
-- you can also import only *.scss you need (see **lib/style.scss** or **lib/admin.scss** for examples)
+- you can also import only \*.scss you need (see **lib/style.scss** or **lib/admin.scss** for examples)
 
 ## Use case examples
 
