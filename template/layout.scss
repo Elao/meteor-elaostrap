@@ -11,3 +11,22 @@ div #loading{
         padding-top: 80px;
     }
 }
+
+img.flag{
+    vertical-align: middle;
+}
+
+// redefine select2 style (there are conflicts somewhere)
+.select2-container.form-control{
+    padding: 0;
+    border: 0;
+}
+.select2-container{
+    border: 0;
+    .select2-choice .select2-arrow b{
+        background: none;
+    }
+}
+.select2-results .select2-highlighted{
+    color: inherit;
+}

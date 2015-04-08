@@ -6,18 +6,18 @@
 // ------------------------------------
 //   Admin Pages
 // ------------------------------------
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/variables/variables";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/layout/layout";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/layout/form";
+@import "sass/admin/variables/variables";
+@import "sass/admin/layout/layout";
+@import "sass/admin/layout/form";
 
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/navbar";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/sidebar";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/tables";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/dropdowns";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/filters";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/tabs";
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/components/select2";
+@import "sass/admin/components/navbar";
+@import "sass/admin/components/sidebar";
+@import "sass/admin/components/tables";
+@import "sass/admin/components/dropdowns";
+@import "sass/admin/components/filters";
+@import "sass/admin/components/tabs";
+@import "sass/admin/components/select2";
 
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/pages/login";
+@import "sass/admin/pages/login";
 
-@import "../.npm/package/node_modules/elaostrap/assets/sass/admin/helpers/responsive";
+@import "sass/admin/helpers/responsive";

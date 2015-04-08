@@ -1,6 +1,6 @@
 Package.describe({
     name: 'yoh:meteor-elao-strap',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'ElaoStrap (bootstrap fork) integration for MeteorJs',
     git: '',
     documentation: 'README.md'
@@ -55,21 +55,6 @@ Package.onUse(function(api) {
 
     // add elaoStrap sass files
     api.addFiles(prefixPaths(elaoStrapPath, [
-        '/assets/sass/admin/components/_dropdowns.scss',
-        '/assets/sass/admin/components/_filters.scss',
-        '/assets/sass/admin/components/_navbar.scss',
-        '/assets/sass/admin/components/_select2.scss',
-        '/assets/sass/admin/components/_sidebar.scss',
-        '/assets/sass/admin/components/_tables.scss',
-        '/assets/sass/admin/components/_tabs.scss',
-        '/assets/sass/admin/helpers/_responsive-phone.scss',
-        '/assets/sass/admin/helpers/_responsive-tablet-h.scss',
-        '/assets/sass/admin/helpers/_responsive-tablet-v.scss',
-        '/assets/sass/admin/helpers/_responsive.scss',
-        '/assets/sass/admin/layout/_form.scss',
-        '/assets/sass/admin/layout/_layout.scss',
-        '/assets/sass/admin/pages/_login.scss',
-        '/assets/sass/admin/variables/_variables.scss',
         '/assets/sass/base/_font.scss',
         '/assets/sass/base/_normalize.scss',
         '/assets/sass/base/_reset.scss',
@@ -119,19 +104,8 @@ Package.onUse(function(api) {
         '/assets/sass/pages/_doc.scss',
         '/assets/sass/variables/_base.scss',
         '/assets/sass/variables/_default.scss',
-        '/assets/sass/admin/variables/_variables.scss',
-        '/assets/sass/admin/layout/_layout.scss',
-        '/assets/sass/admin/layout/_form.scss',
-        '/assets/sass/admin/components/_navbar.scss',
-        '/assets/sass/admin/components/_sidebar.scss',
-        '/assets/sass/admin/components/_tables.scss',
-        '/assets/sass/admin/components/_dropdowns.scss',
-        '/assets/sass/admin/components/_filters.scss',
-        '/assets/sass/admin/components/_tabs.scss',
-        '/assets/sass/admin/components/_select2.scss',
-        '/assets/sass/admin/pages/_login.scss',
-        '/assets/sass/admin/helpers/_responsive.scss',
     ]), 'server');
+
 
     // add custom package files
     api.addFiles([
@@ -139,6 +113,23 @@ Package.onUse(function(api) {
         // don't know why... we need to add one line on the top of files...
         'lib/sass/helpers/_responsive-tablet-v.scss',
         'lib/sass/helpers/_responsive.scss',
+
+        // add admin style
+        'lib/sass/admin/variables/_variables.scss',
+        'lib/sass/admin/layout/_layout.scss',
+        'lib/sass/admin/layout/_form.scss',
+        'lib/sass/admin/components/_navbar.scss',
+        'lib/sass/admin/components/_sidebar.scss',
+        'lib/sass/admin/components/_tables.scss',
+        'lib/sass/admin/components/_dropdowns.scss',
+        'lib/sass/admin/components/_filters.scss',
+        'lib/sass/admin/components/_tabs.scss',
+        'lib/sass/admin/components/_select2.scss',
+        'lib/sass/admin/pages/_login.scss',
+        'lib/sass/admin/helpers/_responsive.scss',
+        'lib/sass/admin/helpers/_responsive-phone.scss',
+        'lib/sass/admin/helpers/_responsive-tablet-h.scss',
+        'lib/sass/admin/helpers/_responsive-tablet-v.scss',
 
         // add style & admin files for default
         'lib/style.scss',
