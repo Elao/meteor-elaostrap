@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1');
-    api.imply(['iron:router', 'aldeed:template-extension', 'natestrauser:select2']);
+    api.imply(['iron:router@1.0.7', 'aldeed:template-extension@3.4.3', 'natestrauser:select2@3.5.1']);
     api.use(['templating', 'aldeed:template-extension'], 'client');
 
     Npm.depends({
