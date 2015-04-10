@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'yoh:meteor-elao-strap',
+    name: 'elao:meteor-elaostrap',
     version: '0.0.2',
-    summary: 'ElaoStrap (bootstrap fork) integration for MeteorJs',
-    git: '',
+    summary: 'ElaoStrap (bootstrap fork) wrapper for MeteorJs',
+    git: 'https://github.com/Elao/meteor-elaostrap/',
     documentation: 'README.md'
 });
 
@@ -25,7 +25,7 @@ Package.onUse(function(api) {
         });
     };
 
-    // add elaoStrap assets + vendors js
+    // add ElaoStrap assets + vendors js
     api.addFiles(prefixPaths(elaoStrapPath, [
         '/assets/fonts/elaostrap/elaostrap.eot',
         '/assets/fonts/elaostrap/elaostrap.svg',
@@ -35,7 +35,7 @@ Package.onUse(function(api) {
         '/assets/images/fancybox/fancybox_loading@2x.gif',
     ]), 'client', {isAsset: true});
 
-    // add elaoStrap vendors js
+    // add ElaoStrap vendors js
     api.addFiles(prefixPaths(elaoStrapPath, [
         '/assets/js/vendors/datepicker.js',
         '/assets/js/vendors/jquery.easing.js',
@@ -53,7 +53,7 @@ Package.onUse(function(api) {
         '/assets/javascripts/bootstrap/dropdown.js',
     ]), 'client');
 
-    // add elaoStrap sass files
+    // add ElaoStrap sass files
     api.addFiles(prefixPaths(elaoStrapPath, [
         '/assets/sass/base/_font.scss',
         '/assets/sass/base/_normalize.scss',
@@ -136,7 +136,7 @@ Package.onUse(function(api) {
         'lib/admin.scss',
     ], 'server');
 
-    // add elaoStrap templates
+    // add ElaoStrap templates
     api.addFiles([
         'template/layout.scss',
     ], 'server');
