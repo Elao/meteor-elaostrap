@@ -13,13 +13,13 @@ In your `client/` directory, write a scss file to import what you need :
 
 - to add ***default*** style use :
 ```scss
-@import ".meteor/local/build/programs/server/assets/packages/yoh_meteor-elao-strap/lib/style";
+@import ".meteor/local/build/programs/server/assets/packages/elao_meteor-elaostrap/lib/style";
 ```
 
 
  - to add ***admin*** style use :
 ```scss
-@import ".meteor/local/build/programs/server/assets/packages/yoh_meteor-elao-strap/lib/admin";
+@import ".meteor/local/build/programs/server/assets/packages/elao_meteor-elaostrap/lib/admin";
 ```
 
 - you can also import only \*.scss you need (see **lib/style.scss** or **lib/admin.scss** for examples)
@@ -43,7 +43,7 @@ In your `client/` directory, write a scss file to import what you need :
     {{#elao_strap_top_navbar  title="Application title" mobileTitle="App title"}}
         <nav id="main-nav" class="pull-right">
             <ul>
-                <li><a href="https://github.com/yoh/meteor-elao-strap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> ElaoStrap for Meteor</a></li>
+                <li><a href="https://github.com/Elao/meteor-elaostrap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> ElaoStrap for Meteor</a></li>
                 <li><a href="https://github.com/JeremyFagis/ElaoStrap" target="_blank" class="line-hover"><i class="elaostrap-font-github"></i> ElaoStrap</a></li>
             </ul>
         </nav>
@@ -54,8 +54,8 @@ In your `client/` directory, write a scss file to import what you need :
 - Write in `client/template/layout/layout.scss` :
 
 ```scss
-@import ".meteor/local/build/programs/server/assets/packages/yoh_meteor-elao-strap/lib/style";
-@import ".meteor/local/build/programs/server/assets/packages/yoh_meteor-elao-strap/template/layout";
+@import ".meteor/local/build/programs/server/assets/packages/elao_meteor-elaostrap/lib/style";
+@import ".meteor/local/build/programs/server/assets/packages/elao_meteor-elaostrap/template/layout";
 ```
 
 - Write in your routing file (use of iron-router) `client/routing.js` :
