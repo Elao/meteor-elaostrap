@@ -1,6 +1,6 @@
 Package.describe({
     name: 'elao:meteor-elaostrap',
-    version: '0.0.3',
+    version: '0.0.4',
     summary: 'ElaoStrap (bootstrap fork) wrapper for MeteorJs',
     git: 'https://github.com/Elao/meteor-elaostrap/',
     documentation: 'README.md'
@@ -8,22 +8,29 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1');
-    api.imply(['iron:router@1.0.7', 'aldeed:template-extension@3.4.3', 'natestrauser:select2@3.5.1']);
+    api.imply(['iron:router@1.0.7', 'aldeed:template-extension@3.4.3']);
     api.use(['templating', 'aldeed:template-extension'], 'client');
 
     Npm.depends({
         "bootstrap-sass": "3.3.1",
-        "elaostrap": "0.1.12",
+        "elaostrap": "0.1.12"
     });
 
     var elaoStrapPath = '.npm/package/node_modules/elaostrap';
     var bootstrapPath = '.npm/package/node_modules/bootstrap-sass';
+    var select2Path = 'select2-v4.0.0/dist';
 
     var prefixPaths = function(prefix, paths) {
         return paths.map(function(path){
             return prefix + path;
         });
     };
+
+    // add select2 js & css
+    api.addFiles(prefixPaths(select2Path, [
+        '/css/select2.min.css',
+        '/js/select2.min.js',
+    ]), 'client');
 
     // add ElaoStrap assets + vendors js
     api.addFiles(prefixPaths(elaoStrapPath, [
@@ -105,7 +112,6 @@ Package.onUse(function(api) {
         '/assets/sass/variables/_base.scss',
         '/assets/sass/variables/_default.scss',
     ]), 'server');
-
 
     // add custom package files
     api.addFiles([

@@ -6,6 +6,7 @@
 
 * [Bootstrap SASS](https://github.com/twbs/bootstrap-sass)
 * [ElaoStrap](https://github.com/JeremyFagis/ElaoStrap)
+* [select2 v4](https://github.com/select2/select2)
 
 ## Installation
 
