@@ -11,11 +11,6 @@ Package.onUse(function(api) {
     api.imply(['iron:router@1.0.7', 'aldeed:template-extension@3.4.3']);
     api.use(['templating', 'aldeed:template-extension'], 'client');
 
-    Npm.depends({
-        "bootstrap-sass": "3.3.1",
-        "elaostrap": "0.1.12"
-    });
-
     var elaoStrapPath = '.npm/package/node_modules/elaostrap';
     var bootstrapPath = '.npm/package/node_modules/bootstrap-sass';
     var select2Path = 'select2-v4.0.0/dist';
@@ -156,4 +151,9 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
+});
+
+Npm.depends({
+    "bootstrap-sass": "3.3.1",
+    "elaostrap": "0.1.12"
 });
