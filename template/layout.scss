@@ -16,17 +16,22 @@ img.flag{
     vertical-align: middle;
 }
 
-// redefine select2 style (there are conflicts somewhere)
-.select2-container.form-control{
-    padding: 0;
-    border: 0;
-}
-.select2-container{
-    border: 0;
-    .select2-choice .select2-arrow b{
-        background: none;
+// redefine select2 style
+.select2{
+    width: 100% !important;
+
+    .select2-selection{
+        padding: 6px;
+        height: 41px;
+        border-color: #D4D4D4;
+
+        .select2-selection__rendered{
+            color: #666;
+        }
+
+        .select2-selection__arrow{
+            height: 41px;
+            width: 30px;
+        }
     }
-}
-.select2-results .select2-highlighted{
-    color: inherit;
 }

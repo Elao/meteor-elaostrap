@@ -1,6 +1,6 @@
 Package.describe({
     name: 'elao:meteor-elaostrap',
-    version: '0.0.4',
+    version: '0.0.5',
     summary: 'ElaoStrap (bootstrap fork) wrapper for MeteorJs',
     git: 'https://github.com/Elao/meteor-elaostrap/',
     documentation: 'README.md'
