@@ -22,15 +22,16 @@ img.flag{
 
     .select2-selection{
         padding: 6px;
-        height: 41px;
+        min-height: 41px;
         border-color: #D4D4D4;
 
         .select2-selection__rendered{
+            padding-right: 30px;
             color: #666;
         }
 
         .select2-selection__arrow{
-            height: 41px;
+            min-height: 41px;
             width: 30px;
         }
     }
