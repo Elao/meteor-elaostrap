@@ -55,6 +55,16 @@ Package.onUse(function(api) {
         '/assets/javascripts/bootstrap/dropdown.js',
     ]), 'client');
 
+    // add bootstrap-sass modals
+    api.addFiles(prefixPaths(bootstrapPath, [
+        '/assets/javascripts/bootstrap/modal.js',
+    ]), 'client');
+    api.addFiles(prefixPaths(bootstrapPath, [
+        '/assets/stylesheets/bootstrap/mixins/_opacity.scss',
+        '/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss',
+        '/assets/stylesheets/bootstrap/_modals.scss',
+    ]), ['server']);
+
     // add ElaoStrap sass files
     api.addFiles(prefixPaths(elaoStrapPath, [
         '/assets/sass/base/_font.scss',

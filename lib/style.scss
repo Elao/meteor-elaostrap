@@ -44,6 +44,25 @@ $fonts-folder-path: "packages/elao_meteor-elaostrap/.npm/package/node_modules/el
 @import "../.npm/package/node_modules/elaostrap/assets/sass/components/datepicker";
 @import "../.npm/package/node_modules/elaostrap/assets/sass/components/select2";
 
+$line-height-base:        1.428571429 !default;
+$zindex-modal:             1040 !default;
+$modal-inner-padding:         15px !default;
+$modal-title-padding:         15px !default;
+$modal-title-line-height:     $line-height-base !default;
+$modal-content-bg:                             #fff !default;
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-fallback-border-color:          #999 !default;
+$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   #e5e5e5 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;
+@import "../.npm/package/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/opacity";
+@import "../.npm/package/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
+@import "../.npm/package/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
 
 // ------------------------------------
 //   Contains Headings, p, hr... style.
